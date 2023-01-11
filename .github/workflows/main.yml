@@ -3,7 +3,7 @@
 
 name: TestProj2 Build
 
-# Controls when the action will run. 
+# Controls when the action will run. \
 on:
   # Triggers the workflow on push or pull request events but only for the develop branch
   push:
@@ -30,7 +30,7 @@ jobs:
             java-package: jdk
 
       # Build ADempiere with ant
-      - name: Build Adempiere ...
+      - name: Build Project2 ...
         run: |
           echo $(java -version)
           echo $GITHUB_REF
