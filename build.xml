@@ -1,4 +1,4 @@
-<project name="Java CI preoject1" default="build" basedir=".">
+<project name="Java CI preoject2" default="build" basedir=".">
     <description>
         Building first test CI
         by
@@ -10,12 +10,19 @@
     <property name="build" location="./build.xml"/>
 
     <target name="build">
-        <echo message="Building Project 1"/>
+        <echo message="Building Project 2"/>
         <echo message="${basedir}"/>
         <echo message="${build.dir}"/>
         <!-- compile the java code from ${src} into ${build.dir}S -->
+        <mkdir dir="${build.dir}"/>
+        <path id="lib.class.path">
+            <pathelement path="proj1.jar"/>
+            <!--<pathelement path="${myCustomProj.home}/tools/lib/ZSDK_API.jar" />-->
+            <!-- Add other path elements as required -->
+        </path>
         <javac target="1.8" encoding="UTF-8" srcdir="${src}" destdir="${build.dir}" deprecation="on" debug="on">
           <!--  <classpath refid="project.class.path" />-->
+            <classpath refid="lib.class.path"/>
         </javac>
     </target>
 </project>

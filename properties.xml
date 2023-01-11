@@ -7,8 +7,9 @@
         properties.
     </description> 
     
-    <dirname property="src" file="./Project1"/>
+    <dirname property="src" file="./Project2"/>
     <dirname property="build.dir" file="./deploy/Wow"/>
+    <!-- set path to include the necessary jar files for javac -->
 
     <!-- Here we could add most common buildpaths -->
 
