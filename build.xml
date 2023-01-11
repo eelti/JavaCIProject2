@@ -1,0 +1,21 @@
+<project name="Java CI preoject1" default="build" basedir=".">
+    <description>
+        Building first test CI
+        by
+        Eric Leduc et Fidelis
+        http://eelti.ca
+    </description>
+    <import file="./properties.xml"/>
+    <!-- set global properties for this build -->
+    <property name="build" location="./build.xml"/>
+
+    <target name="build">
+        <echo message="Building Project 1"/>
+        <echo message="${basedir}"/>
+        <echo message="${build.dir}"/>
+        <!-- compile the java code from ${src} into ${build.dir}S -->
+        <javac target="1.8" encoding="UTF-8" srcdir="${src}" destdir="${build.dir}" deprecation="on" debug="on">
+          <!--  <classpath refid="project.class.path" />-->
+        </javac>
+    </target>
+</project>

@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<project name="properties" basedir="./">
+    <description>
+        This project file sets all properties needed during build and
+        installation. This file is imported in all other build.xml
+        files. This file provides a central place for managing
+        properties.
+    </description> 
+    
+    <dirname property="src" file="./Project1"/>
+    <dirname property="build.dir" file="./deploy/Wow"/>
+
+    <!-- Here we could add most common buildpaths -->
+
+</project>
